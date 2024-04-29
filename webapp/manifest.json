@@ -39,7 +39,14 @@
 		"viewName": "sapui5.walkthrough.main.view.App",
 		"type": "XML",
 		"id": "app"
-	}
+	},
+  "resources": {
+    "css":[
+      {
+        "uri": "css/styles.css"
+      }
+    ]
+  }
   }
 }
 
