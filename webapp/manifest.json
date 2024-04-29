@@ -33,8 +33,13 @@
 		  "supportedLocales": [""],
 		  "fallbackLocale": ""
 		}
-	  }
+	  },
+	  "invoice": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "Invoices.json"
+	}
 	},
+	
 	"rootView": {
 		"viewName": "sapui5.walkthrough.main.view.App",
 		"type": "XML",
