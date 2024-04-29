@@ -1,5 +1,5 @@
 sap.ui.define(
-    ["sap/ui/core/mvc/Controller", "sap/m/MessageToast"],
+    ["sap/ui/core/mvc/Controller", "sap/m/MessageToast", ],
     (Controller, MessageToast) => {
       "use strict";
   
@@ -15,6 +15,16 @@ sap.ui.define(
           // show message
           MessageToast.show(sMsg);
         },
+
+        
+
+        async onOpenDialog() {
+            this.oDialog ??= await this.loadFragment({
+                name: "sapui5.walkthrough.main.view.HelloDialog"
+            });
+
+            this.oDialog.open()
+        }
       });
     }
   );
