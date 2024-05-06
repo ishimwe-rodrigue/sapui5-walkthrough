@@ -40,7 +40,7 @@
             }
         }"
                 numberUnit="{view>/currency}"
-                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error': 'Success'}"
+                numberState="{= ${invoice>ExTendedPrice} > 50 ? 'Error': 'Success'}"
             >
             <firstStatus>
                 <ObjectStatus
