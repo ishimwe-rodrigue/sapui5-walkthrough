@@ -4,24 +4,6 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
     <Shell>
-        <App class="myAppDemoWT">
-            <pages>
-                <Page title="{i18n>homePageTitle}">
-                    <content>
-                        <Panel
-                            headerText="{i18n>helloPanelTitle}"
-                            class="sapUiResponsiveMargin"
-                            width="auto">
-                            <content>
-                                <mvc:XMLView
-                                    viewName="sapui5.walkthrough.main.view.HelloPanel"/>
-                                <mvc:XMLView
-                                    viewName="sapui5.walkthrough.main.view.InvoiceList"/>
-                            </content>
-                        </Panel>
-                    </content>
-                </Page>
-            </pages>
-        </App>
+        <App class="myAppDemoWT" id="app"/>
     </Shell>
 </mvc:View>
