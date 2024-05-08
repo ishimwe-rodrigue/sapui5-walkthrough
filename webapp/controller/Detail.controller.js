@@ -7,6 +7,11 @@ sap.ui.define([
 
 	return Controller.extend("sapui5.walkthrough.main.controller.Detail", {
 		onInit() {
+			const oViewModel = new JSONModel({
+				currency: "USD"
+			});
+			this.getView().setModel(oViewModel, "view");
+
 			const oRouter = this.getOwnerComponent().getRouter();
 			oRouter.getRoute("detail").attachPatternMatched(this.onObjectMatched, this);
 		},
