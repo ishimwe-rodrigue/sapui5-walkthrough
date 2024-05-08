@@ -10,7 +10,7 @@ sap.ui.define([
 		// Arrangements
 		Given.iStartMyUIComponent({
 			componentConfig: {
-				name: "ui5.walkthrough"
+				name: "sapui5.walkthrough.main"
 			}
 		});
 

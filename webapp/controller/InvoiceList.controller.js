@@ -23,9 +23,15 @@ sap.ui.define(
         //build filter array
         const aFilter = [];
         const sQuery = oEvent.getParameter("query");
+        
         if(sQuery) {
             aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
         }
+
+      //   if (sQuery) {
+      //     const sLowerCaseQuery = sQuery.toLowerCase(); // Convert query to lowercase
+      //     aFilter.push(new Filter("ProductName", FilterOperator.Contains, sLowerCaseQuery));
+      // }
 
         //filter binding
         const oList = this.byId("invoiceList");
