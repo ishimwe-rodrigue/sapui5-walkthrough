@@ -90,7 +90,11 @@
           "name": "Detail"
         }
       }
-    }
+    },
+	"contentDensities": {
+		"compact": true,
+		"cozy": true
+	  }
   }
 }
 	
