@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/util/MockServer","sap/base/util/UriParameters"],function(e,t){"use strict";return{init:function(){var r=new e({rootUri:"https://services.odata.org/V2/Northwind/Northwind.svc/"});var a=new t(window.location.href);e.config({autoRespond:true,autoRespondAfter:a.get("serverDelay")||500});var i="../localService";r.simulate(i+"/metadata.xml",i+"/mockdata");r.start()}}});
+//# sourceMappingURL=mockserver.js.map
